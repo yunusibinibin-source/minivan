@@ -369,3 +369,67 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, .55), rgb(66 215 201 / 45%)
 .hero .navbar-brand{
   color:#fff !important; /* banner üstünde beyaz */
 }
+/* =========================
+   MOBİL BANNER FIX
+   ========================= */
+@media (max-width: 768px){
+
+  .hero{
+    min-height: 88vh;        /* 100vh mobilde sorun çıkarıyor */
+    padding-top: 72px;       /* navbar yüksekliği */
+  }
+
+  .hero-center{
+    height: auto;
+    min-height: calc(88vh - 72px);
+    align-items: flex-end;   /* yazıları alta al */
+    padding-bottom: 32px;
+  }
+
+  .hero-cover{
+    background-size: cover !important;
+    background-position: center top !important; /* 🔥 EN KRİTİK */
+  }
+
+  .hero-bg-fallback{
+    object-fit: cover;
+    object-position: center top; /* 🔥 resmin üstü kaybolmasın */
+  }
+
+  .hero-card{
+    max-width: 100%;
+    padding: 18px 16px;
+    border-radius: 18px;
+  }
+
+  .hero-title{
+    font-size: 1.9rem;
+    line-height: 1.15;
+  }
+
+  .hero-sub{
+    font-size: 1rem;
+  }
+
+  .hero-actions{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-actions .btn{
+    width: 100%;
+  }
+
+}
+@media (max-width: 768px){
+  .hero-cover{
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-color:#000;
+  }
+
+  .hero-bg-fallback{
+    object-fit: contain;
+    background:#000;
+  }
+}
