@@ -69,7 +69,7 @@
       "Yük: " + encodeURIComponent(data.load) + "%0A" +
       (data.note ? ("Not: " + encodeURIComponent(data.note) + "%0A") : "");
 
-    window.open("https://wa.me/9054486866358?text=" + msg, "_blank");
+    window.open("https://wa.me/905448686358?text=" + msg, "_blank");
   });
 
   // Haritalar rota/mesafe (harita alanı yok)
