@@ -1,0 +1,12 @@
+PARÇA YÜK NAKLİYE ANKARA - YENİ TASARIM
+
+1. Mevcut sitenizin yedeğini alın.
+2. Bu paketin içindeki index.html ve assets klasörünü public_html içine yükleyin.
+3. Mevcut dosyaların üzerine yazmadan önce yedek aldığınızdan emin olun.
+4. Telefon numarası, WhatsApp bağlantıları, Google Ads etiketi, SEO başlıkları,
+   şehirler, ilçeler, yorumlar, SSS ve teklif formu korunmuştur.
+
+Telefon: 0544 868 63 58
+Google Ads etiketi: AW-17874354293
+
+Paket tek sayfalık statik yapıdadır ve PHP gerektirmez.
