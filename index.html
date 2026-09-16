@@ -39,6 +39,50 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"MovingCompany","name":"Parça Yük Nakliye Ankara","url":"https://parcayuknakliyeankara.com/","telephone":"+905448686358","image":"https://parcayuknakliyeankara.com/assets/img/bannerss.png","logo":"https://parcayuknakliyeankara.com/assets/img/logof.png","address":{"@type":"PostalAddress","addressLocality":"Ankara","addressCountry":"TR"},"areaServed":{"@type":"AdministrativeArea","name":"Türkiye"},"openingHours":"Mo-Su 00:00-23:59","priceRange":"₺₺"}
   </script>
+
+  <style id="customer-vehicle-updates">
+    /* Araç görseli metnin arkasında kararmadan, kendi alanında gösterilir. */
+    #home.hero { height: auto !important; max-height: none !important; }
+    #home .hero-media { display: none !important; }
+    #home .hero-shade { background: linear-gradient(135deg, #080f18, #14212b) !important; }
+    #home .hero-grid { position: relative; z-index: 2; }
+    #home .hero-copy { min-width: 0; }
+    #home .hero-vehicle {
+      position: relative; display: block; width: 100%; max-width: 620px;
+      margin: 22px 0; padding: 0; overflow: hidden;
+      border: 1px solid rgba(255,255,255,.14); border-radius: 20px;
+      background: #101922; box-shadow: 0 16px 40px rgba(0,0,0,.2);
+    }
+    #home .hero-vehicle img {
+      display: block !important; position: static !important;
+      width: 100% !important; height: auto !important; max-height: none !important;
+      object-fit: contain !important; transform: none !important;
+      opacity: 1 !important; filter: none !important;
+    }
+    /* Doğal görüntü oranı korunur; etiket aracın üzerine binmez. */
+    #why .why-photo {
+      display: flex !important; flex-direction: column; align-self: start;
+      height: auto !important; min-height: 0 !important; max-height: none !important;
+      aspect-ratio: auto !important; padding: 0 !important;
+      overflow: hidden; background: #101922;
+    }
+    #why .why-photo::before, #why .why-photo::after { display: none !important; }
+    #why .why-photo > img {
+      display: block !important; position: static !important;
+      width: 100% !important; height: auto !important; min-height: 0 !important;
+      max-height: none !important; object-fit: contain !important;
+      transform: none !important; filter: none !important;
+    }
+    #why .why-photo .vehicle-note {
+      position: static !important; inset: auto !important;
+      width: auto !important; margin: 14px !important;
+      transform: none !important; box-sizing: border-box;
+    }
+    @media (max-width: 620px) {
+      #home .hero-vehicle { margin: 18px 0; border-radius: 16px; }
+      #why .why-photo .vehicle-note { margin: 12px !important; }
+    }
+  </style>
 </head>
 
 <body>
@@ -70,6 +114,10 @@
           <h1>Parça Yük <span>Nakliye Ankara</span></h1>
           <p>Panelvan araç ile parça eşya, 1+1 ev eşyası, ofis, mobilya, beyaz eşya ve şehirler arası yük taşıma.
             Konumunuzu paylaşın, hızlı teklif alın.</p>
+          <figure class="hero-vehicle">
+            <img src="assets/img/bannerss.png" alt="Ankara parça yük taşıma için panelvan araç"
+              loading="eager" fetchpriority="high" decoding="async">
+          </figure>
           <div class="hero-actions"><a class="btn btn-primary" href="tel:05448686358"><i class="fa-solid fa-phone"></i>
               Hemen Ara</a><a class="btn btn-whatsapp"
               href="https://wa.me/905448686358?text=Merhaba%2C%20Par%C3%A7a%20Y%C3%BCk%20Nakliye%20Ankara'dan%20teklif%20almak%20istiyorum.%0A%0ANereden%20%E2%86%92%20Nereye%3A%0AY%C3%BCk%3A%0ATarih%3A"
@@ -115,7 +163,7 @@
           <div><span class="kicker">HİZMETLER</span>
             <h2>Yükünüz için doğru taşıma çözümü</h2>
           </div>
-          <p>Mevcut hizmet yapısı korunarak daha güçlü, daha net ve telefon odaklı bir sunuma dönüştürüldü.</p>
+          <p>Yükünüze göre en doğru, hızlı ve ekonomik araç çözümünü sunuyoruz.</p>
         </div>
         <div class="service-grid">
           <article class="service-card">
@@ -197,7 +245,7 @@
       <div class="container why-layout">
         <div class="why-photo"><img src="assets/img/fiat-ducato-2024-min.jpg" alt="Panelvan nakliye Ankara"
             loading="lazy" decoding="async" sizes="(max-width: 920px) 100vw, 42vw"
-            style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            style="display:block;width:100%;height:auto;object-fit:contain">
           <div class="vehicle-note"><i class="fa-solid fa-truck-fast"></i>
             <div><b>Panelvan Araç</b><small>Ducato • Transit • Transporter</small></div>
           </div>
