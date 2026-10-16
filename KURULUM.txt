@@ -1,9 +1,11 @@
-PARÇA YÜK NAKLİYE ANKARA — 8 SAYFA EKLENTİLİ TAM SİTE
-Güncelleme: 15.10.2026
+PARÇA YÜK NAKLİYE ANKARA — HIZ VE SEO DÜZELTİLMİŞ TAM SİTE
+Güncelleme: 16.10.2026
 
 1. Yayındaki sitenin yedeğini alın.
-2. ZIP içindeki index.html, ankara-panelvan-nakliye.html, yeni 8 HTML dosyası,
-   assets klasörü, robots.txt ve sitemap.xml dosyasını mevcut sitenin köküne yükleyin.
+2. ZIP içindeki 10 HTML dosyasını, assets klasörünü, robots.txt, sitemap.xml,
+   favicon.ico, favicon-96x96.png, apple-touch-icon.png,
+   android-chrome-192x192.png, android-chrome-512x512.png ve site.webmanifest
+   dosyalarını mevcut sitenin köküne birlikte yükleyin.
    cPanel kullanılıyorsa kök çoğunlukla public_html klasörüdür.
    Paketi ayrıca minivan isimli bir alt klasöre yüklemeyin.
 3. Dosyalar aynı isimli mevcut dosyalarla birleştirilmeli; yeni .html sayfalar
@@ -12,8 +14,9 @@ Güncelleme: 15.10.2026
    gerekmez. .git geçmişi teslim paketine alınmamıştır.
 5. teslim-notlari klasörü sizin içindir; yayına yüklemeniz gerekmez.
 6. Varsa sunucu/CDN önbelleğini temizleyin. Ana sayfayı Ctrl+F5 ile yenileyin.
-7. Ana sayfadaki Ambar Hatları alanından 8 sayfayı kontrol edin. Telefon ve
-   WhatsApp teklif bağlantılarını yayın sonrasında kendi cihazınızda deneyin.
+7. Ana sayfadaki Ambar Hatları alanından 8 sayfayı kontrol edin. Telefon,
+   WhatsApp teklif bağlantıları, mobil menü ve şehir aramasını kendi cihazınızda deneyin.
+   Ardından PageSpeed Insights'ta yeni bir analiz çalıştırın.
 8. Search Console > Site Haritaları bölümünde sitemap.xml gönderin/yenileyin.
    Ayrıntılar: https://parcayuknakliyeankara.com/sitemap.xml
 9. Önemli yeni adresler için URL Denetimi > Dizine eklenmesini iste kullanın.
@@ -24,3 +27,13 @@ Telefon / WhatsApp: 0544 868 63 58
 Google Ads etiketi: AW-17874354293
 Toplam: ana sayfa + mevcut panelvan sayfası + 8 yeni sayfa = 10 sayfa.
 Yeni sayfa listesi ve araştırma notları teslim-notlari klasöründedir.
+
+HIZ GÜNCELLEMESİ:
+- Görseller WebP/srcset ile sunulur. İlk araç görseli yüksek önceliklidir.
+- Simge fontu ve harici yazı tipleri kaldırılmıştır.
+- İlk ekran stilleri HTML içinde, diğer stiller ön yüklemeyle gelir.
+- Kullanılan CSS ve JS dosya adları içerik sürümü taşır; assets klasörünü eksiksiz yükleyin.
+- Google Ads kimliği ve olayları korunmuştur.
+- GitHub Pages sunucu önbelleği kod dosyalarından değişmez. Sunucu/CDN kaynaklı
+  ve Google Ads'in kendi dosyasından gelen uyarılar ayrıca açıklanmıştır.
+Detaylar: teslim-notlari/Performans_ve_SEO_Duzeltmeleri.md

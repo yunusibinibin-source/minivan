@@ -1,3 +1,5 @@
+16.10.2026 hız güncellemesinin güncel kontrol ve ölçüm sınırları için Performans_ve_SEO_Duzeltmeleri.md dosyasına bakın. Aşağıdaki notlar 15 Ekim sürümüne aittir.
+
 # Doğrulama notları — 15.10.2026
 
 - 8 yeni sayfa ve 2 mevcut sayfa kontrol edildi.

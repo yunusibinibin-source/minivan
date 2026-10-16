@@ -4,6 +4,7 @@
   var PHONE = "905448686358";
 
   function track(name) {
+    if (typeof window.ensureGoogleTag === "function") window.ensureGoogleTag();
     if (typeof window.gtag === "function") {
       window.gtag("event", name, { send_to: "AW-17874354293" });
     }
@@ -24,7 +25,7 @@
   var mainNav = document.getElementById("mainNav");
 
   function closeMenu() {
-    if (!menuToggle || !mainNav) return;
+    if (!menuToggle || !mainNav || !mainNav.classList.contains("open")) return;
     mainNav.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
     var icon = menuToggle.querySelector("i");
@@ -59,12 +60,12 @@
 
     cityCards.forEach(function (card) {
       var matches = !query || normalizeTR(card.textContent).includes(query);
-      card.hidden = !matches;
+      if (card.hidden === matches) card.hidden = !matches;
       if (matches) visible += 1;
     });
 
     if (cityGrid) cityGrid.classList.toggle("collapsed", !query && !showAll);
-    if (cityCount) cityCount.textContent = visible + " şehir";
+    if (cityCount && cityCount.textContent !== visible + " şehir") cityCount.textContent = visible + " şehir";
     if (showAllButton) showAllButton.style.display = query ? "none" : "flex";
   }
 
@@ -74,8 +75,8 @@
     showAllButton.addEventListener("click", function () {
       showAll = !showAll;
       showAllButton.innerHTML = showAll
-        ? 'Daha az göster <i class="fa-solid fa-chevron-up"></i>'
-        : 'Tüm şehirleri göster <i class="fa-solid fa-chevron-down"></i>';
+        ? 'Daha az göster <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>'
+        : 'Tüm şehirleri göster <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>';
       updateCities();
     });
   }
