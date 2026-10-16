@@ -1,12 +1,26 @@
-PARÇA YÜK NAKLİYE ANKARA - YENİ TASARIM
+PARÇA YÜK NAKLİYE ANKARA — 8 SAYFA EKLENTİLİ TAM SİTE
+Güncelleme: 15.10.2026
 
-1. Mevcut sitenizin yedeğini alın.
-2. Bu paketin içindeki index.html ve assets klasörünü public_html içine yükleyin.
-3. Mevcut dosyaların üzerine yazmadan önce yedek aldığınızdan emin olun.
-4. Telefon numarası, WhatsApp bağlantıları, Google Ads etiketi, SEO başlıkları,
-   şehirler, ilçeler, yorumlar, SSS ve teklif formu korunmuştur.
+1. Yayındaki sitenin yedeğini alın.
+2. ZIP içindeki index.html, ankara-panelvan-nakliye.html, yeni 8 HTML dosyası,
+   assets klasörü, robots.txt ve sitemap.xml dosyasını mevcut sitenin köküne yükleyin.
+   cPanel kullanılıyorsa kök çoğunlukla public_html klasörüdür.
+   Paketi ayrıca minivan isimli bir alt klasöre yüklemeyin.
+3. Dosyalar aynı isimli mevcut dosyalarla birleştirilmeli; yeni .html sayfalar
+   doğrudan sitenin kökünden açılmalıdır. PHP veya veritabanı gerekmez.
+4. .github klasörü mevcut GitHub yayın akışı için korunmuştur; cPanel'e yüklenmesi
+   gerekmez. .git geçmişi teslim paketine alınmamıştır.
+5. teslim-notlari klasörü sizin içindir; yayına yüklemeniz gerekmez.
+6. Varsa sunucu/CDN önbelleğini temizleyin. Ana sayfayı Ctrl+F5 ile yenileyin.
+7. Ana sayfadaki Ambar Hatları alanından 8 sayfayı kontrol edin. Telefon ve
+   WhatsApp teklif bağlantılarını yayın sonrasında kendi cihazınızda deneyin.
+8. Search Console > Site Haritaları bölümünde sitemap.xml gönderin/yenileyin.
+   Ayrıntılar: https://parcayuknakliyeankara.com/sitemap.xml
+9. Önemli yeni adresler için URL Denetimi > Dizine eklenmesini iste kullanın.
+   Bu işlem sayfaların Google'a bildirilmesidir; sıralama garantisi değildir.
 
-Telefon: 0544 868 63 58
+Alan adı: https://parcayuknakliyeankara.com/
+Telefon / WhatsApp: 0544 868 63 58
 Google Ads etiketi: AW-17874354293
-
-Paket tek sayfalık statik yapıdadır ve PHP gerektirmez.
+Toplam: ana sayfa + mevcut panelvan sayfası + 8 yeni sayfa = 10 sayfa.
+Yeni sayfa listesi ve araştırma notları teslim-notlari klasöründedir.

@@ -91,12 +91,14 @@
       var message = [
         "Merhaba, Parça Yük Nakliye Ankara için teklif almak istiyorum.",
         "",
+        "Hizmet: " + (quoteForm.dataset.service || "Parça yük taşıma"),
         "Ad Soyad: " + (data.get("name") || ""),
         "Telefon: " + (data.get("phone") || ""),
         "Nereden: " + (data.get("from") || ""),
         "Nereye: " + (data.get("to") || ""),
         "Mesafe: " + (data.get("km") || "-"),
         "Yük: " + (data.get("load") || ""),
+        "Yükün hazır olduğu tarih: " + (data.get("date") || "Görüşmede belirtilecek"),
         "Not: " + (data.get("note") || "-"),
       ].join("\n");
 
